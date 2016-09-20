@@ -1,0 +1,10 @@
+.spacer {
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.btn-app{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    color: black;
+}

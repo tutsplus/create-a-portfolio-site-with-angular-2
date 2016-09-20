@@ -1,0 +1,25 @@
+<div class="jumbotron">
+    <img class="jumbo" src="app/home/images/businessmen.jpg">
+</div>
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h1>Some of the projects we built</h1>
+        </div>
+    </div>
+
+    <div class="row spacer">
+    </div>
+
+    <div class="row ">
+        <div *ngFor="let project of projects" class="col-lg-4 text-center projects">
+            <img class="img-rounded " src="{{project.image}}" alt="Generic placeholder image" width="140" height="140"> 
+            <h2>{{project.name}}</h2>
+            <p >{{project.info | truncate}}</p>
+            <p><button class="btn btn-block btn-app" type="button" (click)="chooseProject(project)">Learn More</button></p>   
+        </div>
+    </div>
+
+</div>
+

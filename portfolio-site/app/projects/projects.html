@@ -1,0 +1,16 @@
+<div class="container">
+
+    <div class="row spacer">
+        <h1 class="text-center">All of our projects</h1>
+    </div>
+
+    <div class="row ">
+        <div *ngFor="let project of projects" class="col-lg-4 text-center projects">
+            <img class="img-rounded " src="{{project.image}}" alt="Generic placeholder image" width="140" height="140"> 
+            <h2>{{project.name}}</h2>
+            <p class="trunc">{{project.info | truncate}}</p>
+            <p><button class="btn btn-block btn-app" type="button" (click)="chooseProject(project)">Learn More</button></p>   
+        </div>
+    </div>
+
+</div>
